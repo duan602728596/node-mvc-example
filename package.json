@@ -7,6 +7,14 @@
     "eslint:no-fix": "eslint ./",
     "postinstall": "husky install"
   },
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-compress": "^5.1.0",
+    "koa-ejs": "^4.3.0",
+    "koa-static": "^5.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/eslint-parser": "^7.19.1",
@@ -30,6 +38,9 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpackbar": "^5.0.2"
+  },
+  "resolutions": {
+    "ejs": "^3.1.8"
   },
   "lint-staged": {
     "**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}": "eslint"
