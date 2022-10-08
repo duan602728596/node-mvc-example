@@ -24,7 +24,8 @@ function cssLoader(exportOnlyLocals) {
         mode: cssLoaderModeFunc,
         localIdentName: isDevelopment ? '[path][name]__[local]___[hash:base64:6]' : '_[hash:base64:6]',
         exportOnlyLocals
-      }
+      },
+      esModule: !exportOnlyLocals
     }
   };
 }

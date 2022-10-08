@@ -1,0 +1,23 @@
+- var style = require('./list.sass?locals');
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title list node-mvc-example
+
+  body
+    main
+      h1 List
+      table(class=style.table)
+        thead
+          tr
+            th ID
+            th Name
+        tbody.
+          <% humansList.forEach(function(human) { %>
+            <tr>
+              <td class="#{ style.id }"><%= human.id %></td>
+              <td><%= human.name %></td>
+            </tr>
+          <% }) %>

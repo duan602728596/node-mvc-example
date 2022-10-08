@@ -1,6 +1,6 @@
 import path from 'node:path';
 import process from 'node:process';
-import { metaHelper } from '@sweet-milktea/util-tools';
+import { metaHelper } from '@sweet-milktea/utils';
 
 const { __dirname } = metaHelper(import.meta.url);
 

@@ -1,0 +1,12 @@
+- var style = require('./index.sass?locals');
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title node-mvc-example
+
+  body
+    main
+      h1(class=style.title) <%= title %>
+      p <%= text %>

@@ -26,9 +26,10 @@ function middlewares(app, router) {
   /* ejs */
   ejsRender(app, {
     root: viewDir,
-    viewExt: 'html',
+    viewExt: 'ejs',
+    layout: false,
     cache: !isDevelopment,
-    debug: isDevelopment
+    debug: false
   });
 }
 

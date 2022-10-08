@@ -39,6 +39,7 @@ export function createHtmlWebpackPlugin(htmlArr = []) {
       inject: true,
       scriptLoading: 'blocking',
       hash: !isDevelopment,
+      template,
       filename: path.join(viewDir, `${ info.name }.ejs`),
       chunks: [info.name],
       minify: isDevelopment ? false : htmlWebpackPluginMinifyOptions
